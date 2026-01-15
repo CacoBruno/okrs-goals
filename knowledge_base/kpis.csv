@@ -1,0 +1,573 @@
+Indicadores,O que mede (camada cognitiva),com ler (camada cognitiva),Tipo de indicador,Objetivos de comunicação,Maturidade,Indicadores de ROI,Enriquecimentos necessários,Forma de enriquecimento,Casos de Uso,Datapack,Visualização,Tipo de escala de mensuração,Característica da escala de mensuração,estatística - Tendência Central,estatística - Dispersão,estatística - Associação ou Correlação,estatística - Significância,Cálculo
+Alcance,,,exposição,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento",Estruturais,Eficácia,Inferência de Audiência,Automático,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",Imprensa,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Frequência,,,exposição,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento",Estruturais,Eficácia,Sem enriquecimento,Automático,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Share of Voice (Frequência),,,exposição,"Suscitar interesse, Garantir Identificação e empatia, Conseguir a Preferência",Estruturais,Eficácia,Inferência de Audiência,Automático,Concorrência,,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",Frequência / Total de Frequência
+Impressões,O impacto é utlizado para mensurar a visiblidade da marca nas mídias.,,exposição,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra, Efetivar a tomada de Decisão",Estruturais,Eficácia,Inferência de Audiência,Automático,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",Alcance * Frequência
+Diversidade de fontes,quantas fontes a marca apareceu no período. ,,exposição,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Despertar consciência  para marca, Chamar atenção",Básica,Eficácia,Sem enriquecimento,Automático,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Cadência de publicações,proximidade da presença da exposição nas mídias das marcas e dos assuntos,,exposição,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência",Média,Efetividade,Sem enriquecimento,Automático,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Share of Voice (Impressões),,,exposição,"Suscitar interesse, Garantir Identificação e empatia, Conseguir a Preferência",Estruturais,Eficácia,Inferência de Audiência,Automático,Concorrência,,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",Impressões / Total de Impressões
+% de Positividade,"o % de Positividade é a participação relativa de menções claramente positivas em relação ao total:
+",,exposição,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra, Efetivar a tomada de Decisão",Estruturais,Eficácia,Sentimento,Revisão,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Impressões Promotoras,é a quando a empresa está inserida de forma protagonista e favorável em uma reportagem de um veículo relevante.,,qualidade,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra, Efetivar a tomada de Decisão",Estruturais,Eficiência,"Protagonismo, Sentimento","Revisão, Automático","Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Impressões Detratoras,é a quando a empresa está inserida de forma protagonista e desfavorável em uma reportagem de um veículo relevante.,,qualidade,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra, Efetivar a tomada de Decisão",Estruturais,Eficiência,"Protagonismo, Sentimento","Revisão, Automático","Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Total de Engajamento,,,interatividade,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência",Estruturais,Eficácia,Sem enriquecimento,Automático,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+ Comentários,,,interatividade,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência",Estruturais,Eficácia,Sem enriquecimento,Automático,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+ Comentários Favoráveis,,,interatividade,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência",Estruturais,Eficácia,Sentimento,Automático,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+ Comentários Desfavoráveis,,,interatividade,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência",Estruturais,Eficácia,Sentimento,Automático,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Compartilhamento,,,interatividade,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência",Estruturais,Eficácia,"Protagonismo, Sentimento",Automático,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Curtidas,,,interatividade,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência",Estruturais,Eficácia,Sem enriquecimento,Automático,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Protagonismo,,,exposição,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra, Efetivar a tomada de Decisão",Estruturais,Eficiência,Protagonismo,Revisão,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Contr. por Tipo de Público,Contribuição dos públicos para a construção da imagem das empresas nas mídias,,qualidade,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência",Básica,Eficiência,Públicos,Revisão,"Mídias Integradas, Trends, Módulo de Insights",,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+"Popularidade
+","O Indicador de Popularidade é  a relação média da Valência (menções favoráveis) de Mobilização (publicações espontâneas), de Interações, e de Fama (pontencial de impressões). 
+
+A diferença do % de Positividade é que leva em consideração as dimensões mais relevantes para a construção de popularidade, indicando não apenas as menções , mas o quanto é favorável (Valência) em termos de engajamento (Interações), menções espontâneas (Mobilização) e impacto total (Fama)",,reputacional,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência",Média,Eficiência,"Sentimento, Protagonismo",Revisão,"Mídias Integradas, Trends, Módulo de Insights",,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Contribuição do Popularidade por temas,,,reputacional,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência",Média,Eficiência,"Sentimento, Protagonismo",Revisão,"Mídias Integradas, Trends, Módulo de Insights",,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Contribuição do Popularidade por marca,,,reputacional,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência",Média,Eficiência,"Sentimento, Protagonismo",Revisão,"Mídias Integradas, Trends, Módulo de Insights",,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+NPS,"O NPS é utilizado principalmente para aqueles clientes que não são falados normalmente de forma detratora, mas possuem citações sem um alto nível de protagonismo, o que acaba sendo demonstrado pelos impactos inócuos. ",,reputacional,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra, Efetivar a tomada de Decisão",Estruturais,Eficiência,"Protagonismo, Sentimento",Revisão,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",(Imp. Prom - Imp. Detrat) / Impacto Total
+NPS Ponderado,"O NPS Ponderado é utilizado quando a área de comunicação tem uma estratégia muito clara em determinados pilares na mídia e, dessa forma, o que sair na imprensa que não esteja relacionado a isso, deve ter um peso menor.",,reputacional,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra, Efetivar a tomada de Decisão",Estruturais,Eficiência,"Protagonismo, Sentimento",Revisão,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis","Média ponderada, multiplicando o NPS de cada categoria por seu peso e dividindo pelo somatório de seus pesos"
+Contribuição do NPS por temas,,,reputacional,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra, Efetivar a tomada de Decisão",Básica,Eficiência,"Protagonismo, Sentimento, Pilar/Temas",Revisão,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Contribuição do NPS por marca,,,reputacional,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra, Efetivar a tomada de Decisão",Básica,Eficiência,"Protagonismo, Sentimento, Pilar/Temas",Revisão,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+PR,"O %PR é utilizado principalmente para aqueles clientes que são falados constantemente de forma detratora na mídia, e o cliente precisa garantir que está produzindo pautas que promovam a marca ou posicionamentos para balancear os assuntos detratores. ",,reputacional,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra, Efetivar a tomada de Decisão",Estruturais,Eficiência,"Protagonismo, Sentimento",Revisão,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis","Imp. Promotores / 
+(Imp. Prom + Imp. Detrat)"
+PR Ponderado,"O NPS Ponderado é utilizado quando a área de comunicação tem uma estratégia muito clara em determinados pilares na mídia e, dessa forma, o que sair na imprensa que não esteja relacionado a isso, deve ter um peso menor.",,reputacional,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra, Efetivar a tomada de Decisão",Estruturais,Eficiência,"Protagonismo, Sentimento",Revisão,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis","Média ponderada, multiplicando o %PR de cada categoria por seu peso e dividindo pelo somatório de seus pesos"
+Contribuição do PR por temas,,,reputacional,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra, Efetivar a tomada de Decisão",Básica,Eficiência,"Protagonismo, Sentimento, Pilar/Temas",Revisão,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Contribuição do PR por marca,,,reputacional,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra, Efetivar a tomada de Decisão",Básica,Eficiência,"Protagonismo, Sentimento, Pilar/Temas",Revisão,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Valoração (R$),,,financeiro,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra, Efetivar a tomada de Decisão",Estruturais,Eficiência,Inferência de Audiência,Automático,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Valoração (R$) por temas ,,,financeiro,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra, Efetivar a tomada de Decisão",Estruturais,Eficiência,"Inferência de Audiência, Pilar/Temas",Revisão,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Valoração (R$) por marca,,,financeiro,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra, Efetivar a tomada de Decisão",Estruturais,Eficiência,"Inferência de Audiência, Marca/Produto",Revisão,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Contr. por temas para o total de Valoração (R$) ,,,financeiro,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra, Efetivar a tomada de Decisão",Estruturais,Eficiência,"Inferência de Audiência, Pilar/Temas",Revisão,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Contr. por marcas para o total de Valoração (R$) ,,,financeiro,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra, Efetivar a tomada de Decisão",Estruturais,Eficiência,"Inferência de Audiência, Marca/Produto",Revisão,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Comunicação Interna, Comunicação Integrada, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Total de Seguidores,"é o número de total de seguidores de um perfil, sendo utilizado para casos de uso no qual temos de acompanhar perfis de redes sociais",,exposição,"Suscitar interesse, Garantir Identificação e empatia, Conseguir a Preferência, Levar à Decisão de Compra",Básica,Eficácia,Sem enriquecimento,Automático,"Canais Proprietários, Comunicação para Colaboradores (Likedin)",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Seguidores conquistados,o quanto de seguidores novos uma página ganhou no período,,exposição,"Suscitar interesse, Garantir Identificação e empatia, Conseguir a Preferência, Levar à Decisão de Compra",Básica,Eficácia,Sem enriquecimento,Automático,"Canais Proprietários, Comunicação para Colaboradores (Likedin)",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Seguidores perdidos,o quanto de seguidores perdidos por uma página no período,,exposição,"Suscitar interesse, Garantir Identificação e empatia, Conseguir a Preferência, Levar à Decisão de Compra",Básica,Eficácia,Sem enriquecimento,Automático,"Canais Proprietários, Comunicação para Colaboradores (Likedin)",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Aquisição de seguidores,é a razão entre os seguidores conquistados e seguidores perdidos,"se é positivo, teve uma aquisição de seguidores; caso negativo, teve perda de seguidores",exposição,"Suscitar interesse, Garantir Identificação e empatia, Conseguir a Preferência, Levar à Decisão de Compra",Básica,Eficiência,Sem enriquecimento,Automático,"Canais Proprietários, Comunicação para Colaboradores (Likedin)",,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Visualização total do perfil,o quanto o perfl foi visualizados no períodos,,exposição,"Suscitar interesse, Garantir Identificação e empatia, Conseguir a Preferência, Levar à Decisão de Compra",Básica,Eficácia,Sem enriquecimento,Automático,"Canais Proprietários, Comunicação para Colaboradores (Likedin)",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Visitantes únicos,número de visitantes únicos que acessarm o perfil no período analisado,,exposição,"Suscitar interesse, Garantir Identificação e empatia, Conseguir a Preferência, Levar à Decisão de Compra",Básica,Eficácia,Sem enriquecimento,Automático,"Canais Proprietários, Comunicação para Colaboradores (Likedin)",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Frequência média de visualizações por visitante,o número de vezes que os seguidores acessaram o perfl no peródo analisado,"Quanto maior o número, mais vezes o público acessa o perfil. Se tiver em 1 ou menos, indica baixo interesse",exposição,"Suscitar interesse, Garantir Identificação e empatia, Conseguir a Preferência, Levar à Decisão de Compra",Básica,Eficácia,Sem enriquecimento,Automático,"Canais Proprietários, Comunicação para Colaboradores (Likedin)",,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Cliques,quantidade de cliques,1,exposição,"Suscitar interesse, Garantir Identificação e empatia, Conseguir a Preferência, Levar à Decisão de Compra",Básica,Eficácia,Sem enriquecimento,Automático,"Canais Proprietários, Comunicação para Colaboradores (Likedin)",,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Taxa de cliques (CTR),A taxa de cliques (CTR) é uma métrica usada para medir a eficácia de uma campanha publicitária online ou de links em um site. Ela representa a porcentagem de pessoas que clicaram em um link ou anúncio em relação ao número total de visualizações ou impressões.,,exposição,"Suscitar interesse, Garantir Identificação e empatia, Conseguir a Preferência, Levar à Decisão de Compra",Básica,Eficácia,Sem enriquecimento,Automático,"Canais Proprietários, Comunicação para Colaboradores (Likedin)",,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",(Cliques / Impressões) * 100
+Participação relativa da marca no tema,"A ""Participação relativa da marca no tema""  indica o quanto a marca está relacionada ao tema na cobertura da mídia. O indicador quantifica qual empresa tem mais presença na temática em relação aos seus concorrentes. ","A ""Participação relativa da marca no tema"" é um indicador essencial que indica quanto a marca está relacionada ao tema na cobertura da mídia, quantificando a presença de uma empresa em comparação com seus concorrentes. Esse indicador reflete a força da presença da marca em relação ao volume de menções e discussões relacionadas a um determinado tema, permitindo que se identifique quais empresas estão mais ativas e visíveis em contextos específicos. Por exemplo, se o Itaú apresenta uma participação relativa de 0,105 no tema de ""Macroeconomia"", isso significa que ele é uma das principais referências nesse assunto na mídia, superando seus concorrentes.",exposição,"Proporcionar Conhecimento, Garantir Identificação e empatia, Conseguir a Preferência",Média,Eficiência,"Pilar/Temas, Marca/Produto",Revisão,"Concorrência, Módulo de Insights",,,Nominal,Não implica magnitude ou ordem,Moda,Frequência Relativa,"Contigency
+Coefficients
+Chi-Square
+Kramer´s V",Chi-Square,
+Tendência (Média Móvel),"A tendência é analisada através da Média Móvel, que considera a média dos últimos três dias de dados para identificar padrões de comportamento ao longo do tempo. Essa abordagem suaviza variações diárias que podem distorcer a interpretação dos dados e fornece uma visão mais clara das tendências em evolução. A média móvel ajuda a destacar se a imagem da empresa está melhorando ou piorando, permitindo que a gerência tome decisões informadas com base em dados reais e não apenas em flutuações momentâneas.","Um gráfico de tendência que usa média móvel para dados de exposição de mídia suaviza variações aleatórias e destaca a tendência geral ao longo do tempo. No eixo X, estão representados os períodos de tempo analisados, enquanto o eixo Y exibe o número de exposições de mídia ou métricas relacionadas, como audiência ou cliques. A linha dos dados originais, normalmente mais irregular, mostra as flutuações diárias, que podem ser causadas por variações sazonais ou eventos específicos. A linha da média móvel, por outro lado, suaviza esses dados, eliminando ""ruídos"" de curto prazo, permitindo visualizar uma tendência geral de alta, baixa ou estabilidade. A escolha do período da média móvel, como 7 ou 30 dias, é crucial, pois períodos mais longos suavizam mais as flutuações, enquanto períodos curtos mantêm os dados mais detalhados. Quando a média móvel muda de direção, ela sinaliza uma mudança de tendência, como um aumento ou queda consistente na exposição. Assim, comparar a linha dos dados originais com a média móvel ajuda a identificar picos ou quedas atípicas, oferecendo uma visão mais clara do desempenho contínuo de campanhas de mídia.",exposição,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia",Média,Efetividade,Inferência de Audiência,Automático,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Trends, Módulo de Insights",,,Ordinal,Permite mensurar ordem ou dominância,Mediana,Frequência Relativa,"Contigency
+Coefficients
+Chi-Square
+Kramer´s V","Sign test
+Run Rest
+U-Test of
+Mann-Whitney
+ANOVA
+Friedman",
+Variação em torno da média (z-score),"A utilização da Variação em torno da média, expressa pelo z-score, é fundamental para a avaliação de imagem nas mídias, pois permite quantificar o impacto de um determinado evento em relação à performance média observada. O cálculo do z-score, que é dado por (impacto - média) / desvio padrão, proporciona uma visão clara de quão distante um evento está da média, facilitando a identificação de outliers e a compreensão de como eventos específicos influenciam a percepção pública. Através desse método, é possível mensurar a eficácia de campanhas ou incidentes que afetam a imagem da marca, permitindo uma análise mais profunda das reações do público","Os dados podem ser interpretados da seguinte forma:
+
+Presença esperada: refere-se a situações em que o alcance de uma determinada ação ou evento está dentro de uma variação considerada normal, ou seja, um desvio de até 1 unidade para cima ou para baixo da média esperada. Nessa faixa, espera-se que aproximadamente 68,26% das exposições ocorram. Esse intervalo representa a maior parte das ocorrências típicas, o que reflete um comportamento estável e previsível dentro de uma estratégia de comunicação.
+
+Presença intensa: trata de situações em que o alcance supera a média de maneira significativa, variando entre 2 e 3 unidades acima da média. Embora esse fenômeno seja menos comum, correspondendo a apenas 13,6% dos casos, ele é resultado de ações que podem ser influenciadas por fatores externos (exógenos) ou internos (endógenos) de comunicação. Esse comportamento indica uma resposta mais forte do que o esperado, sugerindo um impacto acima do normal.
+
+Outliers: são exposições raras e excepcionais, nas quais o alcance ultrapassa a média em mais de 3 unidades. Essas situações extremas ocorrem em cerca de 0,5% dos casos e, por serem muito incomuns, refletem eventos ou campanhas que causam um impacto significativamente fora do padrão. Esses picos podem ser resultado de circunstâncias inesperadas ou ações de grande repercussão.
+
+Esse tipo de análise ajuda a identificar comportamentos normais e anômalos em relação ao alcance e exposição, permitindo ajustes estratégicos quando necessário.",exposição,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência",Alta,Efetividade,Inferência de Audiência,Automático,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Trends, Módulo de Insights",,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",(impacto - média) / desvio padrão
+Distribuição da exposição,"Distribuição da exposição é analisada através da densidade de probabilidade e do z-score, que revelam a forma como os dados se distribuem em relação à média.","Uma curva de distribuição mais ""fechada"" sugere que há muitos valores distantes da média, indicando uma maior variação na percepção do público, enquanto uma curva ""achatada"" sugere que a maioria dos dados está concentrada em torno da média, o que pode indicar uma imagem mais estável e uniforme. Esta análise é crucial para entender como diferentes temas afetam a exposição da marca e para implementar estratégias que possam melhorar a imagem percebida nas mídias.",exposição,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência",Alta,Efetividade,Inferência de Audiência,Automático,"Concorrência, Módulo de Insights",,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis","(1 / Sqr(2*3.1415*Power([STDEV - 6 meses],2)))*(Power(2.7182, -1/2*Power([z-score], 2)))"
+Variação da média,"A variação da média é uma ferramenta útil para entender a previsibilidade de um tema. O indicador mostra o quanto um tema está distante do seu comportamento comum, indicando que algo relevante pode estar acontecendo. Esse desvio pode ser causado por fatores internos, como uma ação de comunicação planejada (endógena), ou fatores externos, como uma crise ou evento inesperado (exógeno). Portanto, quanto maior a variação, maior a chance de um evento significativo estar afetando o tema.","Quando a variação está próxima de zero, isso indica que o comportamento do tema é mais previsível e estável, ou seja, não há grandes mudanças acontecendo. Já quando a variação está mais distante da média (igual ou maior que 1), significa que algo importante está ocorrendo. Esse desvio pode ser causado por fatores internos, como uma ação de comunicação planejada (endógena), ou fatores externos, como uma crise ou evento inesperado (exógeno). Portanto, quanto maior a variação, maior a chance de um evento significativo estar afetando o tema.",exposição,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Criar Desejo / Expectativa",Média,Eficiência,Pilar/Temas,Revisão,"Concorrência, Trends, Módulo de Insights",,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis", ( [Desv.Alcance orgânico] / [Med.Alcance orgânico] ) - 1
+Padrão de distribuição dos dados,"O Padrão de distribuição dos dados  (represetado por Boxplot, ou diagrama de caixa) é uma ferramenta estatística utilizada para representar graficamente a distribuição de um conjunto de dados, destacando valores extremos e a dispersão dos dados. Ele permite visualizar de forma clara e concisa a mediana, os quartis e possíveis outliers, o que é essencial para uma análise robusta. Ao aplicar o Boxplot na análise da imagem de empresas nas mídias, conseguimos observar rapidamente como diferentes aspectos da comunicação e ações de marketing impactam a percepção pública. Essa visualização é crucial para identificar tendências e padrões que podem influenciar a reputação da empresa no mercado.
+
+Na análise da imagem empresarial, a utilização de indicadores de estatística descritiva é fundamental, pois fornece um resumo claro das características dos dados. Os principais indicadores incluem mínimo, máximo, média, mediana, quartis e desvio padrão. Esses parâmetros nos permitem entender a centralidade e a dispersão dos dados, além de identificar a presença de anomalias. Por exemplo, um alto desvio padrão pode indicar uma grande variação na percepção da marca, enquanto uma média baixa em um determinado tema pode sugerir uma percepção negativa. Esses insights são essenciais para que as empresas possam ajustar suas estratégias de comunicação e marketing.","O gráfico de boxplot, também chamado de gráfico de caixa, é uma ferramenta que ajuda a visualizar a distribuição de um conjunto de dados, destacando sua dispersão, mediana e possíveis outliers. Ele é composto por uma caixa que representa o intervalo interquartil (IQR), que contém os 50% centrais dos dados. Dentro da caixa, há uma linha que indica a mediana, o valor central da distribuição. A parte inferior da caixa representa o primeiro quartil (Q1), delimitando os 25% menores dos dados, enquanto a parte superior da caixa representa o terceiro quartil (Q3), delimitando os 25% maiores. Os ""bigodes"" são linhas que se estendem a partir dos quartis, indicando a variação dos dados fora do IQR, mas sem incluir os outliers. Estes, por sua vez, são representados como pontos isolados fora dos bigodes, mostrando valores que estão significativamente distantes da maioria dos dados.
+
+Para interpretar um boxplot, a localização da mediana dentro da caixa pode indicar a simetria ou assimetria da distribuição dos dados. Se a mediana estiver mais próxima do topo ou da base da caixa, isso sugere uma distribuição assimétrica. O tamanho da caixa indica a variabilidade dos dados: caixas maiores mostram maior dispersão e caixas menores indicam menor variabilidade. Os bigodes também ajudam a visualizar a dispersão dos dados fora da caixa, com bigodes curtos sugerindo pouca variabilidade nos extremos e bigodes longos indicando maior dispersão. Os outliers, representados como pontos fora dos bigodes, destacam valores discrepantes que podem ser importantes para a análise.",exposição,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Criar Desejo / Expectativa",Alta,Eficiência,"Pilar/Temas, Marca/Produto",Automático,"Trends, Módulo de Insights",,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Associação da marca ao tema,"""Associação da marca ao tema"" indica o quanto a marca está presente na cobertura do tema em relação à presença estatisticamente esperada. Esta presença esperada é calculada pela relação entre a participação total do tema na cobertura e o quanto o tema representa da participação da marca nas mídias","A ""Associação da marca ao tema"" é um indicador que indica o quanto a marca está presente na cobertura do tema em relação à presença estatisticamente esperada. Este cálculo é feito levando em consideração a participação total do tema em relação à participação da marca nas mídias. Se um tema representa 0,2 da cobertura total da mídia e a marca tem uma presença de 0,4 nesse tema, a associação é considerada forte, pois a marca está significativamente ativa em um espaço que é relevante para ela. Essa métrica ajuda a entender se a comunicação da marca está alinhada com os interesses e preocupações do público e do mercado, permitindo ajustes estratégicos e táticos em suas campanhas de marketing e comunicação",exposição,"Proporcionar Conhecimento, Garantir Identificação e empatia, Conseguir a Preferência",Alta,Eficiência,"Pilar/Temas, Marca/Produto",Revisão,"Concorrência, Módulo de Insights",,,Nominal,Não implica magnitude ou ordem,Moda,Frequência Relativa,"Contigency
+Coefficients
+Chi-Square
+Kramer´s V",Chi-Square,
+Índice de Alcance Máximo de Temas,"""Índice de Alcance Máximo de Temas"" é uma métrica que quantifica o interesse da imprensa em torno de determinados temas, atribuindo um valor entre 1 e 100. Um valor de 100 representa o pico máximo de popularidade do termo em questão, enquanto um valor de 1 indica um interesse muito baixo. Essa ferramenta permite monitorar e comparar a relevância de diferentes tópicos ao longo do tempo, possibilitando uma análise mais profunda sobre quais assuntos estão em alta ou em baixa na cobertura da mídia. Com essa informação, organizações e indivíduos podem ajustar suas estratégias de comunicação e marketing de acordo com as tendências observadas.
+
+Esse indicador é semelhante ao modelo utilizado pelo Google Trends, que também mensura o interesse ao longo do tempo, possibilitando que os usuários acompanhem as flutuações de popularidade de termos de busca. Diante disso, podemos referir-nos a esse tipo de análise como Media Trends, uma vez que fornece uma visão abrangente da forma como temas específicos são abordados e discutidos pela imprensa, permitindo que as empresas e instituições se mantenham atualizadas e reativas às mudanças nos interesses do público e da mídia.","O indicador atribui um valor de 1 a 100 para indicar o interesse relativo da imprensa pela temas nos últimos dias. Um valor de 100 indica o pico de popularidade do termo, enquanto um valor de 1 indica um interesse muito baixo. Isso permite aos comparar o interesse relativo ao longo do tempo.",exposição,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia",Básica,Efetividade,Inferência de Audiência,Automático,"Trends, Módulo de Insights",,,Intervalar,Os intervalos entre as adjacências são iguais; tipo NPS,Média Aritmética,Desvio Padrão,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Total de Ações de Comunicação,,,gestão,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra",Básica,Eficácia,Input manual,Manual,Ações de comunicação,,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Tipos de Ação,,,gestão,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra",Básica,Eficácia,Input manual,Manual,Ações de comunicação,,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Impacto por ação de comunicação,,,qualidade,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra",Básica,Eficácia,"Input manual, Ação de comunicação",Revisão,Ações de comunicação,,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Contribuição da ação de comunicação para a imagem da marca nas mídias,,,qualidade,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra",Básica,Eficácia,"Input manual, Ação de comunicação",Revisão,Ações de comunicação,,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Impacto por estratégias de ação de comunicação,,,qualidade,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra",Básica,Eficácia,"Input manual, Ação de comunicação",Revisão,Ações de comunicação,,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Contribuição das estratégias de comunicação para a imagem da marca nas mídias,,,qualidade,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra",Média,Eficiência,"Input manual, Ação de comunicação",Revisão,Ações de comunicação,,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Retorno de Impacto por investimento por ação,,,financeiro,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra",Média,Eficiência,"Input manual, Ação de comunicação",Revisão,Ações de comunicação,,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Retorno de contribuição de imagem por investimento por ação,,,financeiro,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra",Média,Eficiência,"Input manual, Ação de comunicação",Revisão,Ações de comunicação,,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Retorno de Impacto por estratégias de ação de comunicação,,,financeiro,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra",Média,Eficiência,"Input manual, Ação de comunicação",Revisão,Ações de comunicação,,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Retorno de contribuição de imabem por estratégias de ação de comunicação,,,financeiro,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra",Média,Eficiência,"Input manual, Ação de comunicação",Revisão,Ações de comunicação,,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Retorno de Valoração (R$) Financeiro de Imagem por investimento por ação de comunicação,,,financeiro,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra",Média,Eficiência,"Input manual, Ação de comunicação",Revisão,Ações de comunicação,,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Retorno de Valoração (R$) Financeiro de Imagem por investimento por estratégias ação de comunicação,,,financeiro,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra",Média,Eficiência,"Input manual, Ação de comunicação",Revisão,Ações de comunicação,,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Diversidade de jornalistas,,,exposição,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Conseguir a Preferência",Média,Eficiência,Jornalistas/Analistas,Revisão,"Ações de comunicação, Exposição e Reputação, Concorrência",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Contr. de jornalistas para a imagem da marca nas mídias,,,qualidade,"Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Conseguir a Preferência",Média,Eficiência,"Protagonismo, Sentimento, Jornalistas/Analistas",Revisão,"Ações de comunicação, Exposição e Reputação, Concorrência",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Diversidade de analistsa financeiros,,,exposição,"Proporcionar Conhecimento, Conseguir a Preferência, Levar à Decisão de Compra",Média,Eficiência,Jornalistas/Analistas,Revisão,Ações de comunicação,,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+Contr. de analistas financeiros para a imagem da marca nas mídias,,,qualidade,"Proporcionar Conhecimento, Conseguir a Preferência, Levar à Decisão de Compra",Média,Eficiência,"Protagonismo, Sentimento, Jornalistas/Analistas",Revisão,Ações de comunicação,,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+bounceRate,dados da similar web,,exposição,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra, Efetivar a tomada de Decisão",Básica,Eficácia,Sem enriquecimento,Automático,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+timeOnSiteMonth,dados da similar web,,exposição,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra, Efetivar a tomada de Decisão",Básica,Eficácia,Sem enriquecimento,Automático,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
+TrafficSources,dados da similar web,,exposição,"Despertar consciência  para marca, Chamar atenção, Suscitar interesse, Proporcionar Conhecimento, Garantir Identificação e empatia, Criar Desejo / Expectativa, Conseguir a Preferência, Levar à Decisão de Compra, Efetivar a tomada de Decisão",Básica,Eficácia,Sem enriquecimento,Automático,"Exposição e Reputação, Concorrência, Ações de comunicação, Mídias Integradas, Canais Proprietários, Trends, Módulo de Insights",,,Rácio,"Há um zero absoluto, razão pela qual é possível comparar as magnitudes; Impacto, exemplo","Médias Aritmética, Geométrica a Hamonica",Desvio Padrão e Coeficiente de variação,"Correlation
+Correlation
+Racio","Test T
+Test F
+ANOVA
+Regression and
+factorial
+analysis",
