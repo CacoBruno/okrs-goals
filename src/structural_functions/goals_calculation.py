@@ -100,11 +100,17 @@ def gen_dataviews(path_dataframe: str) -> pd.DataFrame:
 
         dataframe = generate_row_hash(dataframe, columns=cols_hash, hash_col='Chave Análise de Mídia Hash')
 
-    dataframe['Alcance orgânico'] = dataframe['Alcance orgânico'].apply(lambda x : float(x.replace('-', '0').replace(',', '.')))
-    dataframe['Valoração'] = dataframe['Valoração'].apply(lambda x : float(x.replace('-', '0').replace(',', '.')))
-    dataframe['Jornalista count'] = dataframe['Jornalista'].apply(lambda x : is_jornalist(x))
-    dataframe['Ação total'] = dataframe['Ação'].apply(lambda x : is_action_count(x))
-    dataframe['É ação'] = dataframe['Ação'].apply(lambda x : is_action(x))
+    if dataframe['Alcance orgânico'].dtype != 'float64':
+        dataframe['Alcance orgânico'] = dataframe['Alcance orgânico'].apply(lambda x : float(x.replace('-', '0').replace(',', '.')))
+    
+    if dataframe['Valoração'].dtype != 'float64':        
+        dataframe['Valoração'] = dataframe['Valoração'].apply(lambda x : float(x.replace('-', '0').replace(',', '.')))
+
+    if any(col in dataframe.columns for col in ['Jornalista', 'Ação']):
+    
+        dataframe['Jornalista count'] = dataframe['Jornalista'].apply(lambda x : is_jornalist(x))
+        dataframe['Ação total'] = dataframe['Ação'].apply(lambda x : is_action_count(x))
+        dataframe['É ação'] = dataframe['Ação'].apply(lambda x : is_action(x))
 
     columns_fix = ['Data', 'Tipos de impactos', 'Sentimento', 'Empresa analisada', 'Produto analisado',
                                 'Nível de Protagonismo final', 'Tier', 'Jornalista', 'Mídia', 'Ação', 'Tipo da ação', 'É ação', 'Status classificação']
@@ -220,57 +226,177 @@ def goals_calculations(dataview: pd.DataFrame) -> Dict:
         contr_type='Total'
     )
 
-    agg_mes_nps_acao_per_total = agg_mes_nps_acao_total[agg_mes_nps_acao_total['É ação'].isin(['ação'])].reset_index()
-    agg_mes_nps_acao_per_total['per de contr das ações'] = round(agg_mes_nps_acao_per_total['nps_contrib_É ação'] / agg_mes_nps_acao_per_total['nps_score'] *100, 2)
-    agg_mes_nps_acao_per_total = agg_mes_nps_acao_per_total.sort_values(by=['ano'], ascending=True)
-    agg_mes_nps_acao_per_total['mes_name'] = agg_mes_nps_acao_per_total['mes'].apply(lambda x : map_mes[x])
-    agg_mes_nps_acao_per_total['data'] = agg_mes_nps_acao_per_total.apply(lambda x : x['mes_name'] + '/' + str((x['ano'])), axis=1)
-    period = agg_mes_nps_acao_per_total['data'].astype(str).str.strip().str.lower().pipe(lambda s: pd.to_datetime(s, format="%b/%Y", errors="coerce")).dt.to_period("M")
-    agg_mes_nps_acao_per_total["data"] = period
+    try:
+        agg_mes_nps_acao_per_total = agg_mes_nps_acao_total[agg_mes_nps_acao_total['É ação'].isin(['ação'])].reset_index()
+        agg_mes_nps_acao_per_total['per de contr das ações'] = round(agg_mes_nps_acao_per_total['nps_contrib_É ação'] / agg_mes_nps_acao_per_total['nps_score'] *100, 2)
+        agg_mes_nps_acao_per_total = agg_mes_nps_acao_per_total.sort_values(by=['ano'], ascending=True)
+        agg_mes_nps_acao_per_total['mes_name'] = agg_mes_nps_acao_per_total['mes'].apply(lambda x : map_mes[x])
+        agg_mes_nps_acao_per_total['data'] = agg_mes_nps_acao_per_total.apply(lambda x : x['mes_name'] + '/' + str((x['ano'])), axis=1)
+        period = agg_mes_nps_acao_per_total['data'].astype(str).str.strip().str.lower().pipe(lambda s: pd.to_datetime(s, format="%b/%Y", errors="coerce")).dt.to_period("M")
+        agg_mes_nps_acao_per_total["data"] = period
 
 
-    agg_ano_nps_acao_total = nps_total_and_contrib(
-        dataview,
-        dim_col='É ação',
-        group_cols=("ano", "Empresa analisada"),
-        contr_type='Total'
-    )
+        agg_ano_nps_acao_total = nps_total_and_contrib(
+            dataview,
+            dim_col='É ação',
+            group_cols=("ano", "Empresa analisada"),
+            contr_type='Total'
+        )
 
-    agg_ano_nps_acao_per_total = agg_ano_nps_acao_total[agg_ano_nps_acao_total['É ação'].isin(['ação'])].reset_index()
-    agg_ano_nps_acao_per_total['per de contr das ações'] = round(agg_ano_nps_acao_per_total['nps_contrib_É ação'] / agg_ano_nps_acao_per_total['nps_score'] *100, 2)
-
-
-    ### Contribuição de Ações Promotoras
-    ##### calculando os dataviews: agg_mes, agg_ano, agg_dia 
+        agg_ano_nps_acao_per_total = agg_ano_nps_acao_total[agg_ano_nps_acao_total['É ação'].isin(['ação'])].reset_index()
+        agg_ano_nps_acao_per_total['per de contr das ações'] = round(agg_ano_nps_acao_per_total['nps_contrib_É ação'] / agg_ano_nps_acao_per_total['nps_score'] *100, 2)
 
 
-    agg_mes_nps_acao_promotor = nps_total_and_contrib(
-        dataview,
-        dim_col='É ação',
-        group_cols=("ano", "mes", "Empresa analisada"),
-        contr_type='Promotor'
-    )
+        ### Contribuição de Ações Promotoras
+        ##### calculando os dataviews: agg_mes, agg_ano, agg_dia 
 
-    agg_mes_nps_acao_per_promotor = agg_mes_nps_acao_promotor[agg_mes_nps_acao_promotor['É ação'].isin(['ação'])].reset_index()
-    agg_mes_nps_acao_per_promotor['per de contr das ações'] = round(agg_mes_nps_acao_per_promotor['nps_contrib_É ação'] / agg_mes_nps_acao_per_promotor['nps_score'] *100, 2)
-    agg_mes_nps_acao_per_promotor = agg_mes_nps_acao_per_promotor.sort_values(by=['ano'], ascending=True)
-    agg_mes_nps_acao_per_promotor['mes_name'] = agg_mes_nps_acao_per_promotor['mes'].apply(lambda x : map_mes[x])
-    agg_mes_nps_acao_per_promotor['data'] = agg_mes_nps_acao_per_promotor.apply(lambda x : x['mes_name'] + '/' + str((x['ano'])), axis=1)
-    period = agg_mes_nps_acao_per_promotor['data'].astype(str).str.strip().str.lower().pipe(lambda s: pd.to_datetime(s, format="%b/%Y", errors="coerce")).dt.to_period("M")
-    agg_mes_nps_acao_per_promotor["data"] = period
 
-    agg_mes_nps_acao_per_promotor
+        agg_mes_nps_acao_promotor = nps_total_and_contrib(
+            dataview,
+            dim_col='É ação',
+            group_cols=("ano", "mes", "Empresa analisada"),
+            contr_type='Promotor'
+        )
 
-    agg_ano_nps_acao_promotor = nps_total_and_contrib(
-        dataview,
-        dim_col='É ação',
-        group_cols=("ano", "Empresa analisada"),
-        contr_type='Promotor'
-    )
+        agg_mes_nps_acao_per_promotor = agg_mes_nps_acao_promotor[agg_mes_nps_acao_promotor['É ação'].isin(['ação'])].reset_index()
+        agg_mes_nps_acao_per_promotor['per de contr das ações'] = round(agg_mes_nps_acao_per_promotor['nps_contrib_É ação'] / agg_mes_nps_acao_per_promotor['nps_score'] *100, 2)
+        agg_mes_nps_acao_per_promotor = agg_mes_nps_acao_per_promotor.sort_values(by=['ano'], ascending=True)
+        agg_mes_nps_acao_per_promotor['mes_name'] = agg_mes_nps_acao_per_promotor['mes'].apply(lambda x : map_mes[x])
+        agg_mes_nps_acao_per_promotor['data'] = agg_mes_nps_acao_per_promotor.apply(lambda x : x['mes_name'] + '/' + str((x['ano'])), axis=1)
+        period = agg_mes_nps_acao_per_promotor['data'].astype(str).str.strip().str.lower().pipe(lambda s: pd.to_datetime(s, format="%b/%Y", errors="coerce")).dt.to_period("M")
+        agg_mes_nps_acao_per_promotor["data"] = period
 
-    agg_ano_nps_acao_per_promotor = agg_ano_nps_acao_promotor[agg_ano_nps_acao_promotor['É ação'].isin(['ação'])].reset_index()
-    agg_ano_nps_acao_per_promotor['per de contr das ações'] = round(agg_ano_nps_acao_per_promotor['nps_contrib_É ação'] / agg_ano_nps_acao_per_promotor['nps_score'] *100, 2)
+        agg_mes_nps_acao_per_promotor
 
+        agg_ano_nps_acao_promotor = nps_total_and_contrib(
+            dataview,
+            dim_col='É ação',
+            group_cols=("ano", "Empresa analisada"),
+            contr_type='Promotor'
+        )
+
+        agg_ano_nps_acao_per_promotor = agg_ano_nps_acao_promotor[agg_ano_nps_acao_promotor['É ação'].isin(['ação'])].reset_index()
+        agg_ano_nps_acao_per_promotor['per de contr das ações'] = round(agg_ano_nps_acao_per_promotor['nps_contrib_É ação'] / agg_ano_nps_acao_per_promotor['nps_score'] *100, 2)
+    
+    ### Contr. de Ações para o NPS
+        ### gerando valores contr_total_acao_media_mensal, contr_total_acao_acumulada_ano
+        ### contr_promotora_acao_media_mensal, contr_promotora_acao_acumulada_ano
+
+        # %_de_contr_total_acao_media_mensal
+        descr_contr_total_acao_media_mensal = 'É o indicador que mensura o quanto as ações de comunicação influenciam a construção da reputação da marca ao longo do período. A definição de uma média mensal como meta garante a manutenção das ações em um patamar adequado, evitando variações significativas ao longo dos meses.'
+        contr_total_acao_media_mensal_baseline = round(agg_mes_nps_acao_per_total['per de contr das ações'].mean(),2) 
+        contr_total_acao_media_mensal_conservador_meta = round(contr_total_acao_media_mensal_baseline - (agg_mes_nps_acao_per_total['per de contr das ações'].std() / 5), 2)
+        contr_total_acao_media_mensal_conservador_variacao = round((contr_total_acao_media_mensal_conservador_meta - contr_total_acao_media_mensal_baseline) / contr_total_acao_media_mensal_baseline *100, 2) 
+        contr_total_acao_media_mensal_moderado_meta = round(contr_total_acao_media_mensal_baseline*1.02, 2)
+        contr_total_acao_media_mensal_moderado_variacao = round((contr_total_acao_media_mensal_moderado_meta - contr_total_acao_media_mensal_baseline) / contr_total_acao_media_mensal_baseline *100, 2) 
+        contr_total_acao_media_mensal_ousado_meta = round(contr_total_acao_media_mensal_baseline + (agg_mes_nps_acao_per_total['per de contr das ações'].std() / 5), 2)
+        contr_total_acao_media_mensal_ousado_variacao = round((contr_total_acao_media_mensal_ousado_meta - contr_total_acao_media_mensal_baseline) / contr_total_acao_media_mensal_baseline *100, 2) 
+
+
+        # %_de_agg_ano_nps_acao_per_total
+        descr_contr_total_acao_acumulada_ano = 'É o indicador que mensura o quanto as ações de comunicação influenciam a construção da reputação da marca ao longo do ano. A meta acumulada anual permite avaliar esse impacto de forma consolidada, reduzindo a influência de variações pontuais entre os meses.'
+        contr_total_acao_agg_ano_baseline = round(agg_ano_nps_acao_per_total['per de contr das ações'].mean(),2) 
+        contr_total_acao_agg_ano_conservador_meta = round(contr_total_acao_agg_ano_baseline*0.98, 2)
+        contr_total_acao_agg_ano_conservador_variacao = round((contr_total_acao_agg_ano_conservador_meta - contr_total_acao_agg_ano_baseline) / contr_total_acao_agg_ano_baseline *100, 2) 
+        contr_total_acao_agg_ano_moderado_meta = round(contr_total_acao_agg_ano_baseline*1.02, 2)
+        contr_total_acao_agg_ano_moderado_variacao = round((contr_total_acao_agg_ano_moderado_meta - contr_total_acao_agg_ano_baseline) / contr_total_acao_agg_ano_baseline *100, 2) 
+        contr_total_acao_agg_ano_ousado_meta = round(contr_total_acao_agg_ano_baseline*1.05, 2)
+        contr_total_acao_agg_ousado_variacao = round((contr_total_acao_agg_ano_ousado_meta - contr_total_acao_agg_ano_baseline) / contr_total_acao_agg_ano_baseline *100, 2) 
+
+
+        # %_de_contr_promotora_acao_media_mensal
+        descr_contr_promotora_acao_media_mensal = 'É o indicador que mensura o quanto as ações de comunicação que geraram impacto promotor influenciam a construção da reputação da marca ao longo do período. A definição de uma média mensal como meta garante a manutenção das ações em um patamar adequado, evitando variações significativas ao longo dos meses.'
+        contr_promotor_acao_media_mensal_baseline = round(agg_mes_nps_acao_per_promotor['per de contr das ações'].mean(),2) 
+        contr_promotor_acao_media_mensal_conservador_meta = round(contr_promotor_acao_media_mensal_baseline - (agg_mes_nps_acao_per_promotor['per de contr das ações'].std() / 5), 2)
+        contr_promotor_acao_media_mensal_conservador_variacao = round((contr_promotor_acao_media_mensal_conservador_meta - contr_promotor_acao_media_mensal_baseline) / contr_promotor_acao_media_mensal_baseline *100, 2) 
+        contr_promotor_acao_media_mensal_moderado_meta = round(contr_promotor_acao_media_mensal_baseline*1.02, 2)
+        contr_promotor_acao_media_mensal_moderado_variacao = round((contr_promotor_acao_media_mensal_moderado_meta - contr_promotor_acao_media_mensal_baseline) / contr_promotor_acao_media_mensal_baseline *100, 2) 
+        contr_promotor_acao_media_mensal_ousado_meta = round(contr_promotor_acao_media_mensal_baseline + (agg_mes_nps_acao_per_promotor['per de contr das ações'].std() / 5), 2)
+        contr_promotor_acao_media_mensal_ousado_variacao = round((contr_promotor_acao_media_mensal_ousado_meta - contr_promotor_acao_media_mensal_baseline) / contr_promotor_acao_media_mensal_baseline *100, 2) 
+
+        # %_de_agg_ano_nps_acao_per_promotor
+        descr_contr_promotor_acao_acumulada_ano = 'É o indicador que mensura o quanto as ações de comunicação que geraram impacto promotor influenciam a construção da reputação da marca ao longo do ano. A meta acumulada anual permite avaliar esse impacto de forma consolidada, reduzindo a influência de variações pontuais entre os meses.'
+        contr_promotor_acao_agg_ano_baseline = round(agg_ano_nps_acao_per_promotor['per de contr das ações'].mean(),2) 
+        contr_promotor_acao_agg_ano_conservador_meta = round(contr_promotor_acao_agg_ano_baseline*0.98, 2)
+        contr_promotor_acao_agg_ano_conservador_variacao = round((contr_promotor_acao_agg_ano_conservador_meta - contr_promotor_acao_agg_ano_baseline) / contr_promotor_acao_agg_ano_baseline *100, 2) 
+        contr_promotor_acao_agg_ano_moderado_meta = round(contr_promotor_acao_agg_ano_baseline*1.02, 2)
+        contr_promotor_acao_agg_ano_moderado_variacao = round((contr_promotor_acao_agg_ano_moderado_meta - contr_promotor_acao_agg_ano_baseline) / contr_promotor_acao_agg_ano_baseline *100, 2) 
+        contr_promotor_acao_agg_ano_ousado_meta = round(contr_promotor_acao_agg_ano_baseline*1.05, 2)
+        contr_promotor_acao_agg_ano_ousado_variacao = round((contr_promotor_acao_agg_ano_ousado_meta - contr_promotor_acao_agg_ano_baseline) / contr_promotor_acao_agg_ano_baseline *100, 2) 
+
+        contr_dict = {'ações de comunicação' :
+                    { '(%) Contr. das Ações ao NPS - Média mensal' :
+                                    
+                                        { 'descricao' : descr_contr_total_acao_media_mensal, 
+                                            'baseline' : contr_total_acao_media_mensal_baseline, 
+                                            
+                                            'conservadora' : {'meta' : contr_total_acao_media_mensal_conservador_meta, 
+                                                        'variacao' : contr_total_acao_media_mensal_conservador_variacao} , 
+                                        
+                                        'moderada' : {'meta' : contr_total_acao_media_mensal_moderado_meta, 
+                                                        'variacao' : contr_total_acao_media_mensal_moderado_variacao}, 
+
+                                        'ousada' : {'meta' : contr_total_acao_media_mensal_ousado_meta,  
+                                                        'variacao' : contr_total_acao_media_mensal_ousado_variacao}}, 
+
+
+
+                    '(%) Contr. das Ações ao NPS - Acumulado no ano' :
+                                    
+                                        { 'descricao' : descr_contr_total_acao_acumulada_ano, 
+                                            'baseline' : contr_total_acao_agg_ano_baseline, 
+                                            
+                                            'conservadora' : {'meta' : contr_total_acao_agg_ano_conservador_meta, 
+                                                        'variacao' : contr_total_acao_agg_ano_conservador_variacao} , 
+                                        
+                                        'moderada' : {'meta' : contr_total_acao_agg_ano_moderado_meta, 
+                                                        'variacao' : contr_total_acao_agg_ano_moderado_variacao}, 
+
+                                        'ousada' : {'meta' : contr_total_acao_agg_ano_ousado_meta,  
+                                                        'variacao' : contr_total_acao_agg_ousado_variacao}}, 
+
+
+
+                    '(%) Contr. das Ações Promotoras ao NPS - Média mensal' :
+                                    
+                                        { 'descricao' : descr_contr_promotora_acao_media_mensal, 
+                                            'baseline' : contr_promotor_acao_media_mensal_baseline, 
+                                            
+                                            'conservadora' : {'meta' : contr_promotor_acao_media_mensal_conservador_meta, 
+                                                        'variacao' : contr_promotor_acao_media_mensal_conservador_variacao} , 
+                                        
+                                        'moderada' : {'meta' : contr_promotor_acao_media_mensal_moderado_meta, 
+                                                        'variacao' : contr_promotor_acao_media_mensal_moderado_variacao}, 
+
+                                        'ousada' : {'meta' : contr_promotor_acao_media_mensal_ousado_meta,  
+                                                        'variacao' : contr_promotor_acao_media_mensal_ousado_variacao}
+                                                        },
+                    
+                    
+                    '(%) Contr. das Ações Promotoras ao NPS - Acumulado no ano' :
+                                    
+                                        { 'descricao' : descr_contr_promotor_acao_acumulada_ano, 
+                                            'baseline' : contr_promotor_acao_agg_ano_baseline, 
+                                            
+                                            'conservadora' : {'meta' : contr_promotor_acao_agg_ano_conservador_meta, 
+                                                        'variacao' : contr_promotor_acao_agg_ano_conservador_variacao} , 
+                                        
+                                        'moderada' : {'meta' : contr_promotor_acao_agg_ano_moderado_meta, 
+                                                        'variacao' : contr_promotor_acao_agg_ano_moderado_variacao}, 
+
+                                        'ousada' : {'meta' : contr_promotor_acao_agg_ano_ousado_meta,  
+                                                        'variacao' : contr_promotor_acao_agg_ano_ousado_variacao}
+                                                        },
+                                                        
+                                                        }, 
+
+
+
+        }
+
+    except:
+
+        contr_dict = {}
 
     ########### DICIONÁRIOS ###########
 
@@ -771,121 +897,7 @@ def goals_calculations(dataview: pd.DataFrame) -> Dict:
                                                     'variacao' : valoracao_media_ano_ousado_variacao}},                                   
     }
 
-    ### Contr. de Ações para o NPS
-    ### gerando valores contr_total_acao_media_mensal, contr_total_acao_acumulada_ano
-    ### contr_promotora_acao_media_mensal, contr_promotora_acao_acumulada_ano
-
-    # %_de_contr_total_acao_media_mensal
-    descr_contr_total_acao_media_mensal = 'É o indicador que mensura o quanto as ações de comunicação influenciam a construção da reputação da marca ao longo do período. A definição de uma média mensal como meta garante a manutenção das ações em um patamar adequado, evitando variações significativas ao longo dos meses.'
-    contr_total_acao_media_mensal_baseline = round(agg_mes_nps_acao_per_total['per de contr das ações'].mean(),2) 
-    contr_total_acao_media_mensal_conservador_meta = round(contr_total_acao_media_mensal_baseline - (agg_mes_nps_acao_per_total['per de contr das ações'].std() / 5), 2)
-    contr_total_acao_media_mensal_conservador_variacao = round((contr_total_acao_media_mensal_conservador_meta - contr_total_acao_media_mensal_baseline) / contr_total_acao_media_mensal_baseline *100, 2) 
-    contr_total_acao_media_mensal_moderado_meta = round(contr_total_acao_media_mensal_baseline*1.02, 2)
-    contr_total_acao_media_mensal_moderado_variacao = round((contr_total_acao_media_mensal_moderado_meta - contr_total_acao_media_mensal_baseline) / contr_total_acao_media_mensal_baseline *100, 2) 
-    contr_total_acao_media_mensal_ousado_meta = round(contr_total_acao_media_mensal_baseline + (agg_mes_nps_acao_per_total['per de contr das ações'].std() / 5), 2)
-    contr_total_acao_media_mensal_ousado_variacao = round((contr_total_acao_media_mensal_ousado_meta - contr_total_acao_media_mensal_baseline) / contr_total_acao_media_mensal_baseline *100, 2) 
-
-
-    # %_de_agg_ano_nps_acao_per_total
-    descr_contr_total_acao_acumulada_ano = 'É o indicador que mensura o quanto as ações de comunicação influenciam a construção da reputação da marca ao longo do ano. A meta acumulada anual permite avaliar esse impacto de forma consolidada, reduzindo a influência de variações pontuais entre os meses.'
-    contr_total_acao_agg_ano_baseline = round(agg_ano_nps_acao_per_total['per de contr das ações'].mean(),2) 
-    contr_total_acao_agg_ano_conservador_meta = round(contr_total_acao_agg_ano_baseline*0.98, 2)
-    contr_total_acao_agg_ano_conservador_variacao = round((contr_total_acao_agg_ano_conservador_meta - contr_total_acao_agg_ano_baseline) / contr_total_acao_agg_ano_baseline *100, 2) 
-    contr_total_acao_agg_ano_moderado_meta = round(contr_total_acao_agg_ano_baseline*1.02, 2)
-    contr_total_acao_agg_ano_moderado_variacao = round((contr_total_acao_agg_ano_moderado_meta - contr_total_acao_agg_ano_baseline) / contr_total_acao_agg_ano_baseline *100, 2) 
-    contr_total_acao_agg_ano_ousado_meta = round(contr_total_acao_agg_ano_baseline*1.05, 2)
-    contr_total_acao_agg_ousado_variacao = round((contr_total_acao_agg_ano_ousado_meta - contr_total_acao_agg_ano_baseline) / contr_total_acao_agg_ano_baseline *100, 2) 
-
-
-    # %_de_contr_promotora_acao_media_mensal
-    descr_contr_promotora_acao_media_mensal = 'É o indicador que mensura o quanto as ações de comunicação que geraram impacto promotor influenciam a construção da reputação da marca ao longo do período. A definição de uma média mensal como meta garante a manutenção das ações em um patamar adequado, evitando variações significativas ao longo dos meses.'
-    contr_promotor_acao_media_mensal_baseline = round(agg_mes_nps_acao_per_promotor['per de contr das ações'].mean(),2) 
-    contr_promotor_acao_media_mensal_conservador_meta = round(contr_promotor_acao_media_mensal_baseline - (agg_mes_nps_acao_per_promotor['per de contr das ações'].std() / 5), 2)
-    contr_promotor_acao_media_mensal_conservador_variacao = round((contr_promotor_acao_media_mensal_conservador_meta - contr_promotor_acao_media_mensal_baseline) / contr_promotor_acao_media_mensal_baseline *100, 2) 
-    contr_promotor_acao_media_mensal_moderado_meta = round(contr_promotor_acao_media_mensal_baseline*1.02, 2)
-    contr_promotor_acao_media_mensal_moderado_variacao = round((contr_promotor_acao_media_mensal_moderado_meta - contr_promotor_acao_media_mensal_baseline) / contr_promotor_acao_media_mensal_baseline *100, 2) 
-    contr_promotor_acao_media_mensal_ousado_meta = round(contr_promotor_acao_media_mensal_baseline + (agg_mes_nps_acao_per_promotor['per de contr das ações'].std() / 5), 2)
-    contr_promotor_acao_media_mensal_ousado_variacao = round((contr_promotor_acao_media_mensal_ousado_meta - contr_promotor_acao_media_mensal_baseline) / contr_promotor_acao_media_mensal_baseline *100, 2) 
-
-    # %_de_agg_ano_nps_acao_per_promotor
-    descr_contr_promotor_acao_acumulada_ano = 'É o indicador que mensura o quanto as ações de comunicação que geraram impacto promotor influenciam a construção da reputação da marca ao longo do ano. A meta acumulada anual permite avaliar esse impacto de forma consolidada, reduzindo a influência de variações pontuais entre os meses.'
-    contr_promotor_acao_agg_ano_baseline = round(agg_ano_nps_acao_per_promotor['per de contr das ações'].mean(),2) 
-    contr_promotor_acao_agg_ano_conservador_meta = round(contr_promotor_acao_agg_ano_baseline*0.98, 2)
-    contr_promotor_acao_agg_ano_conservador_variacao = round((contr_promotor_acao_agg_ano_conservador_meta - contr_promotor_acao_agg_ano_baseline) / contr_promotor_acao_agg_ano_baseline *100, 2) 
-    contr_promotor_acao_agg_ano_moderado_meta = round(contr_promotor_acao_agg_ano_baseline*1.02, 2)
-    contr_promotor_acao_agg_ano_moderado_variacao = round((contr_promotor_acao_agg_ano_moderado_meta - contr_promotor_acao_agg_ano_baseline) / contr_promotor_acao_agg_ano_baseline *100, 2) 
-    contr_promotor_acao_agg_ano_ousado_meta = round(contr_promotor_acao_agg_ano_baseline*1.05, 2)
-    contr_promotor_acao_agg_ano_ousado_variacao = round((contr_promotor_acao_agg_ano_ousado_meta - contr_promotor_acao_agg_ano_baseline) / contr_promotor_acao_agg_ano_baseline *100, 2) 
-
-    contr_dict = {'ações de comunicação' :
-                { '(%) Contr. das Ações ao NPS - Média mensal' :
-                                
-                                    { 'descricao' : descr_contr_total_acao_media_mensal, 
-                                        'baseline' : contr_total_acao_media_mensal_baseline, 
-                                        
-                                        'conservadora' : {'meta' : contr_total_acao_media_mensal_conservador_meta, 
-                                                    'variacao' : contr_total_acao_media_mensal_conservador_variacao} , 
-                                    
-                                    'moderada' : {'meta' : contr_total_acao_media_mensal_moderado_meta, 
-                                                    'variacao' : contr_total_acao_media_mensal_moderado_variacao}, 
-
-                                    'ousada' : {'meta' : contr_total_acao_media_mensal_ousado_meta,  
-                                                    'variacao' : contr_total_acao_media_mensal_ousado_variacao}}, 
-
-
-
-                '(%) Contr. das Ações ao NPS - Acumulado no ano' :
-                                
-                                    { 'descricao' : descr_contr_total_acao_acumulada_ano, 
-                                        'baseline' : contr_total_acao_agg_ano_baseline, 
-                                        
-                                        'conservadora' : {'meta' : contr_total_acao_agg_ano_conservador_meta, 
-                                                    'variacao' : contr_total_acao_agg_ano_conservador_variacao} , 
-                                    
-                                    'moderada' : {'meta' : contr_total_acao_agg_ano_moderado_meta, 
-                                                    'variacao' : contr_total_acao_agg_ano_moderado_variacao}, 
-
-                                    'ousada' : {'meta' : contr_total_acao_agg_ano_ousado_meta,  
-                                                    'variacao' : contr_total_acao_agg_ousado_variacao}}, 
-
-
-
-                '(%) Contr. das Ações Promotoras ao NPS - Média mensal' :
-                                
-                                    { 'descricao' : descr_contr_promotora_acao_media_mensal, 
-                                        'baseline' : contr_promotor_acao_media_mensal_baseline, 
-                                        
-                                        'conservadora' : {'meta' : contr_promotor_acao_media_mensal_conservador_meta, 
-                                                    'variacao' : contr_promotor_acao_media_mensal_conservador_variacao} , 
-                                    
-                                    'moderada' : {'meta' : contr_promotor_acao_media_mensal_moderado_meta, 
-                                                    'variacao' : contr_promotor_acao_media_mensal_moderado_variacao}, 
-
-                                    'ousada' : {'meta' : contr_promotor_acao_media_mensal_ousado_meta,  
-                                                    'variacao' : contr_promotor_acao_media_mensal_ousado_variacao}
-                                                    },
-                
-                
-                '(%) Contr. das Ações Promotoras ao NPS - Acumulado no ano' :
-                                
-                                    { 'descricao' : descr_contr_promotor_acao_acumulada_ano, 
-                                        'baseline' : contr_promotor_acao_agg_ano_baseline, 
-                                        
-                                        'conservadora' : {'meta' : contr_promotor_acao_agg_ano_conservador_meta, 
-                                                    'variacao' : contr_promotor_acao_agg_ano_conservador_variacao} , 
-                                    
-                                    'moderada' : {'meta' : contr_promotor_acao_agg_ano_moderado_meta, 
-                                                    'variacao' : contr_promotor_acao_agg_ano_moderado_variacao}, 
-
-                                    'ousada' : {'meta' : contr_promotor_acao_agg_ano_ousado_meta,  
-                                                    'variacao' : contr_promotor_acao_agg_ano_ousado_variacao}
-                                                    },
-                                                    
-                                                    }, 
-
-
-
-    }
+ 
 
 
     ###################### Dicionário Final ################

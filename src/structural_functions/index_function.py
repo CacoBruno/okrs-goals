@@ -330,7 +330,7 @@ def action_score(
 
 
 def is_jornalist(jornalista):
-    list_not_jornalista = ['não mapeado', '-', 'redação']
+    list_not_jornalista = ['não mapeado', '-', 'redação', 'indeterminado']
     jornalista_lower = jornalista.lower()
 
     if any(l.lower() in jornalista_lower for l in list_not_jornalista):
@@ -339,7 +339,7 @@ def is_jornalist(jornalista):
         return 'é jornalista'
     
 def is_action_count(action):
-    list_not_action = ['outros', '-']
+    list_not_action = ['outros', '-', 'indeterminado']
     action_lower = action.lower()
 
     if any(l.lower() in action_lower for l in list_not_action):
