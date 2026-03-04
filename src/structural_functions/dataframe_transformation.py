@@ -236,7 +236,7 @@ def valoracao_calc(
 
 def transform_dataframe(path_onboarding_dataframe: str) -> pd.DataFrame: 
 
-    dataframe = pd.read_parquet(f'df_classificado.parquet')
+    dataframe = pd.read_parquet(path_onboarding_dataframe)
     dataframe = dataframe.rename(columns={'Protagonismo' : 'Nível de Protagonismo final', 
                                         'tags_positividade' : 'Sentimento',
                                         'tags_promocao' : 'Tipos de impactos',
